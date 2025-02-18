@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background: #C9D6FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: scroll;
+            flex-wrap: wrap;
+        }
+        .box1{
+            width: 300px;
+            height: 400px;
+            margin: 10px;
+            background-color: aqua;
+            background-image: url(images/b123.jpg);
+            background-size:cover;
+            border-radius:10px ;
+            color: black;
+            padding-bottom: 40px;
+            
+        }
+        .box2{
+            width: 300px;
+            height: 400px;
+            margin:10px;
+            background-color: aqua;
+            background-image: url(images/b24.jpg);
+            background-size:cover;
+            border-radius:10px ;
+            color: black;
+            
+        }
+        .box3{
+            width: 300px;
+            height: 400px;
+            margin:10px;
+            background-color: aqua;
+            background-image: url(images/b31.jpg);
+            background-size:cover;
+            border-radius:10px ;
+            color: black;
+            
+        }
+        .box{
+            min-width: 300px;
+            margin: 10px;
+        }
+        .btn{
+            border:none;
+            background-color: palevioletred;
+            cursor:pointer;
+            
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 5px;
+            display: block;
+        }
+        .inside{
+            columns: white;
+            background-color:palevioletred; 
+        }
+        @media (max-width:950px){
+            
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+    <hr>
+        <div class="box1">
+            <h1>Dr.Sheth's</h1>
+            <h4>Flat 30% Off</h4>
+            <input type="button" value="Shop Now ->" class="btn inside">
+        </div>
+        <div class="box2">
+            <h1>Dot & Key</h1>
+            <h4>Best Seller</h4>
+            <input type="button" value="Shop Now ->" class="btn inside">
+        </div>
+        <div class="box3">
+            <h1>Beauty of joseon</h1>
+            <h4>Buy 2 Get 1</h4>
+            <input type="button" value="Shop Now ->" class="btn inside">
+        </div>
+    </div>
+    
+</body>
+</html>

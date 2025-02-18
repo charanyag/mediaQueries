@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main {
+            width: 100vw;
+            height: 100vh;
+            background-color: blanchedalmond;
+            background-image: url(images/back.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 275px;
+            /* background-color: burlywood; */
+            border-radius: 10px;
+            box-shadow: 0 0 50px rgb(243, 235, 235);
+            background-color: transparent;
+            background: rgba(255, 255, 255, 0);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(7.5px);
+            -webkit-backdrop-filter: blur(7.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .Log {
+            margin-bottom: 35px;
+            font-size: 25px;
+            color: aliceblue;
+        }
+        .input-cls {
+            width: 90%;
+            margin: 10px;
+            font-size: 18px;
+            padding: 6px 10px;
+            /* border: none; */
+            background-color: transparent;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, 0.18);
+            /* border-bottom: 1px solid rgb(241, 235, 235); */
+            color: aliceblue;
+        }
+        .logbtn {
+            margin-top: 30px;
+            padding: 8px;
+            border-radius: 5px;
+            width: 70%;
+            border: none;
+            border: 2px solid rgb(8, 8, 8);
+            background-color: wheat;
+            color: rgb(5, 4, 4);
+            cursor: pointer;
+        }
+        .logbtn:hover {
+            background-color: antiquewhite;
+            color: rgb(189, 65, 65);
+            box-shadow: 0 0 10px rgb(113, 199, 230);
+        }
+        .input-cls:hover{
+            box-shadow: 0 0 10px white;
+        }
+        ::placeholder {
+            color: rgb(249, 243, 243);
+        }
+        .up {
+            color: rgb(246, 242, 242);
+            margin-top: 20px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1 class="Log">LOGIN</h1>
+            <input type="text" name="Username" placeholder="Username" class="input-cls">
+            <input type="password" name="Password" placeholder="Password" class="input-cls">
+            <input type="submit" value="Login" class="logbtn">
+            <p class="up">Not a Member ? Signup</p>
+        </div>
+    </div>
+</body>
+</html>
+

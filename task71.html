@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Google</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(images/wall.jpeg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 60%;
+            height: 400px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+        }
+        .input-grp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            /* border: 1px solid black; */
+            border-radius: 25px;
+            width: 90%;
+        }
+        i{
+            color: black;
+            font-size: 20px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .t-field{
+            border: none;
+            outline: none;
+            font-size: 20px;
+            padding: 10px;
+            width: 600px;
+        }
+        .list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .box{
+            width: 110px;
+            height: 110px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+
+        }
+        .box:hover{
+            background-color: rgba(255, 255, 255, 0.241);
+            .dd{
+                opacity: 1;
+            }
+        }
+        .circle{
+            width: 40%;
+            height: 40%;
+            border-radius: 50%;
+            background-color: rgb(126, 172, 222);
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .shortcuts{
+            width: 100%;
+            border-radius: 50%;
+        }
+        p{
+            color: white;
+        }
+        ::placeholder{
+            font-size: medium;
+            color: grey;
+        }
+        .Right{
+            width: 225px;
+            height: 50px;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            p{
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+        .grid-grp{
+            display: flex;
+        }
+        .dots{
+            width: 0px;
+            color: white;
+        }
+        .dd{
+            position: relative;
+            left: 40px;
+            color: white;
+            opacity: 0;
+            transition: 1s all ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <img src="images/google.png" width="60%" style="margin-bottom: 40px;">
+            <div class="input-grp">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <form action="https://www.google.com/search">
+                    <input type="text" class="t-field" placeholder="Search Google or type a URL" name="q">
+                </form>
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-camera"></i>
+            </div>
+            <div class="list">
+                <div class="box">
+                    <i class="fa-solid fa-ellipsis-vertical dd"></i>
+                    <div class="circle">
+                        <img src="images/web.jpg" class="shortcuts" alt="">
+                    </div>
+                    <p>Web Store</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-ellipsis-vertical dd"></i>
+                    <div class="circle">
+                        <img src="images/insta.png" class="shortcuts" alt="">
+                    </div>
+                    <p>Instagram</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-ellipsis-vertical dd"></i>
+                    <div class="circle">
+                        <img src="images/flip.jpg" class="shortcuts" alt="">
+                    </div>
+                    <p>Flipkart</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-ellipsis-vertical dd"></i>
+                    <div class="circle">
+                        <img src="images/youtube.png" class="shortcuts" alt="">
+                    </div>
+                    <p>Youtube</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-ellipsis-vertical dd"></i>
+                    <div class="circle">
+                        <img src="images/face.png" class="shortcuts" alt="">
+                    </div>
+                    <p>Facebook</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-ellipsis-vertical dd"></i>
+                    <div class="circle">
+                        <img src="images/net.png" class="shortcuts" alt="">
+                    </div>
+                    <p>Netflix</p>
+                </div>
+                <div class="box">
+                    <div class="circle" style="margin-top: 20px;">
+                        <img src="images/plus.png" class="shortcuts" alt="">
+                    </div>
+                    <p>Add Shortcut</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Right">
+        <p>Gmail</p>
+        <p>Images</p>
+        <div class="grid-grp">
+            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+        </div>
+        <img src="Images/Hrithik.png" alt="" width="35px" style="border-radius: 50%; cursor: pointer;" >
+    </div>
+</body>
+</html>
